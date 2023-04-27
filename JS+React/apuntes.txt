@@ -1,0 +1,44 @@
+JAVASCRIPT: débilmente tipado y dinámico
+https://fullstackopen.com/es/part1/java_script
+
+Variables:
+let - se le puede reasignar el valor a la variable 
+const - no se le puede reasignar el valor a la variable, es solo de lectura
+var - no recomendada para usar 
+
+Scope - espacio entre llaves
+let es una variable local del scope donde se creó 
+var es global, se puede acceder desde fuera del scope 
+ 
+Tipos primitivos de JS - son inmutables
+number
+string 
+boolean
+undefined
+null
+BigInt
+Symbol
+*Se puede generar uno nuevo a partir de ellos pero no se pueden cambiar
+
+Tipo no primitivo - son mutables
+objetos: arrays, funciones, objetos
+*no se puede reasignar el valor pero sí puede cambiar
+En los arrays, si usamos concat, no lo muta, crea una nueva lista con un valor agregado:
+    const t = [1, -1, 3]
+
+    const t2 = t.concat(5)
+
+    console.log(t)  // [1, -1, 3] es impreso
+    console.log(t2) // [1, -1, 3, 5] es impreso
+
+funciones - ciudadanos de primera clase
+Se pueden guardar en una variable, se pueden devolver desde una función...
+
+function expression - const sumar = (a,b) =>{...}
+declaracion de función - function sumar (a,b){...}
+    se puede utilizar arriba de todo el código. JS primero parsea el código, 
+    detecata dónde están las funciones y variables y algunas las genera en memoria - hoisting  
+
+REACT
+public - archivos estáticos del proyecto 
+source - archivos fuente del proyecto
